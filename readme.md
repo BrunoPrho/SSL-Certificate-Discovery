@@ -19,6 +19,8 @@ Scripting in `Nmap` is discussed in this [page](https://nmap.org/book/nse.html).
 
 *Example:*
 
+From the directory where the script is installed.
+
 ```
  nmap --script discovery-certificate-csv.nse  -p 443-9999 192.168.20.1-5 --script-args "csv_output.basepath='result.csv'"
 ```
