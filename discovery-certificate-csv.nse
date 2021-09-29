@@ -65,7 +65,9 @@ action = function(host, port)
     host.targetname = " "
   end
   b64= base64.enc(cert_pem.pem)
-  file:write(host.ip .. "," .. host.name .. "," .. host.targetname .. "," .. port.service .. "," .. port.protocol .. "," .. port.number .. "," .. b64)
+  sha1_cert= openssl.sha1(b64)
+  hash64= base64.enc(sha1_cert)
+  file:write(host.ip .. "," .. host.name .. "," .. host.targetname .. "," .. port.service .. "," .. port.protocol .. "," .. port.number .. "," .. hash64 .. "," .. b64)
   file:write('\n')
   file:close()
   return true

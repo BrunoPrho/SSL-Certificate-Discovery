@@ -33,6 +33,7 @@ The ouput is a CSV with a `,` as separator and with columns such as
 4. `port.service` [tcp]
 5. `port.protocol` [https]
 6. `port.number` 
+7. `SHA1`of the base64 `Server's certificate`
 7. `x509 Server's Certificate` in base64
 
 
