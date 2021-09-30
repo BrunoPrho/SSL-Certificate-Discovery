@@ -75,7 +75,9 @@ Nmap done: 254 IP addresses (142 hosts up) scanned in 57.98 seconds
 
 ## Business Use Case
 
-The tool can be used to collect on any DMZ all the exposed certificates. The PEM can then later be decapsulated for analysis and x509 field extraction.
+The tool can be used to collect on any DMZ all the exposed certificates. The PEM can then later be decapsulated for analysis and x509 field extraction. As outline on the below, the origin of the certificates you will discover is different.
+
+![Output-CSV](./variety.png)
 
 😎💥💥 **Happy Certificate Hunting**. 😈
 
